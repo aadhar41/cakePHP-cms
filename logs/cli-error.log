@@ -1,0 +1,47 @@
+2017-12-29 11:23:11 Error: [Cake\Database\Exception] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'cake_cms.test' doesn't exist in /var/www/html/cakePHP/vendor/cakephp/cakephp/src/Database/Schema/Collection.php on line 131
+Stack Trace:
+#0 /var/www/html/cakePHP/vendor/cakephp/cakephp/src/Database/Schema/Collection.php(97): Cake\Database\Schema\Collection->_reflect('Column', 'test', Array, Object(Cake\Database\Schema\TableSchema))
+#1 /var/www/html/cakePHP/vendor/cakephp/cakephp/src/Database/Schema/CachedCollection.php(63): Cake\Database\Schema\Collection->describe('test', Array)
+#2 /var/www/html/cakePHP/vendor/cakephp/cakephp/src/ORM/Table.php(532): Cake\Database\Schema\CachedCollection->describe('test')
+#3 /var/www/html/cakePHP/vendor/cakephp/cakephp/src/ORM/Table.php(653): Cake\ORM\Table->getSchema()
+#4 /var/www/html/cakePHP/vendor/cakephp/bake/src/Shell/Task/TemplateTask.php(304): Cake\ORM\Table->getPrimaryKey()
+#5 /var/www/html/cakePHP/vendor/cakephp/bake/src/Shell/Task/TemplateTask.php(158): Bake\Shell\Task\TemplateTask->_loadController()
+#6 /var/www/html/cakePHP/vendor/cakephp/cakephp/src/Console/Shell.php(507): Bake\Shell\Task\TemplateTask->main('test')
+#7 /var/www/html/cakePHP/vendor/cakephp/cakephp/src/Console/Shell.php(500): Cake\Console\Shell->runCommand(Array, false, Array)
+#8 /var/www/html/cakePHP/vendor/cakephp/cakephp/src/Console/CommandRunner.php(141): Cake\Console\Shell->runCommand(Array, true)
+#9 /var/www/html/cakePHP/bin/cake.php(12): Cake\Console\CommandRunner->run(Array)
+#10 {main}
+
+
+2017-12-29 11:24:15 Error: [Cake\Database\Exception] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'cake_cms.test' doesn't exist in /var/www/html/cakePHP/vendor/cakephp/cakephp/src/Database/Schema/Collection.php on line 131
+Stack Trace:
+#0 /var/www/html/cakePHP/vendor/cakephp/cakephp/src/Database/Schema/Collection.php(97): Cake\Database\Schema\Collection->_reflect('Column', 'test', Array, Object(Cake\Database\Schema\TableSchema))
+#1 /var/www/html/cakePHP/vendor/cakephp/cakephp/src/Database/Schema/CachedCollection.php(63): Cake\Database\Schema\Collection->describe('test', Array)
+#2 /var/www/html/cakePHP/vendor/cakephp/cakephp/src/ORM/Table.php(532): Cake\Database\Schema\CachedCollection->describe('test')
+#3 /var/www/html/cakePHP/vendor/cakephp/cakephp/src/ORM/Table.php(653): Cake\ORM\Table->getSchema()
+#4 /var/www/html/cakePHP/vendor/cakephp/bake/src/Shell/Task/ModelTask.php(220): Cake\ORM\Table->getPrimaryKey()
+#5 /var/www/html/cakePHP/vendor/cakephp/bake/src/Shell/Task/ModelTask.php(130): Bake\Shell\Task\ModelTask->getAssociations(Object(Cake\ORM\Table))
+#6 /var/www/html/cakePHP/vendor/cakephp/bake/src/Shell/Task/ModelTask.php(113): Bake\Shell\Task\ModelTask->getTableContext(Object(Cake\ORM\Table), 'test', 'Test')
+#7 /var/www/html/cakePHP/vendor/cakephp/bake/src/Shell/Task/ModelTask.php(100): Bake\Shell\Task\ModelTask->bake('Test')
+#8 /var/www/html/cakePHP/vendor/cakephp/cakephp/src/Console/Shell.php(507): Bake\Shell\Task\ModelTask->main('test')
+#9 /var/www/html/cakePHP/vendor/cakephp/cakephp/src/Console/Shell.php(500): Cake\Console\Shell->runCommand(Array, false, Array)
+#10 /var/www/html/cakePHP/vendor/cakephp/cakephp/src/Console/CommandRunner.php(141): Cake\Console\Shell->runCommand(Array, true)
+#11 /var/www/html/cakePHP/bin/cake.php(12): Cake\Console\CommandRunner->run(Array)
+#12 {main}
+
+
+2017-12-29 12:42:59 Error: [Cake\Database\Exception] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'cake_cms.generates' doesn't exist in /var/www/html/cakePHP/vendor/cakephp/cakephp/src/Database/Schema/Collection.php on line 131
+Stack Trace:
+#0 /var/www/html/cakePHP/vendor/cakephp/cakephp/src/Database/Schema/Collection.php(97): Cake\Database\Schema\Collection->_reflect('Column', 'generates', Array, Object(Cake\Database\Schema\TableSchema))
+#1 /var/www/html/cakePHP/vendor/cakephp/cakephp/src/Database/Schema/CachedCollection.php(63): Cake\Database\Schema\Collection->describe('generates', Array)
+#2 /var/www/html/cakePHP/vendor/cakephp/cakephp/src/ORM/Table.php(532): Cake\Database\Schema\CachedCollection->describe('generates')
+#3 /var/www/html/cakePHP/vendor/cakephp/cakephp/src/ORM/Table.php(653): Cake\ORM\Table->getSchema()
+#4 /var/www/html/cakePHP/vendor/cakephp/bake/src/Shell/Task/TemplateTask.php(304): Cake\ORM\Table->getPrimaryKey()
+#5 /var/www/html/cakePHP/vendor/cakephp/bake/src/Shell/Task/TemplateTask.php(158): Bake\Shell\Task\TemplateTask->_loadController()
+#6 /var/www/html/cakePHP/vendor/cakephp/cakephp/src/Console/Shell.php(507): Bake\Shell\Task\TemplateTask->main('generates')
+#7 /var/www/html/cakePHP/vendor/cakephp/cakephp/src/Console/Shell.php(500): Cake\Console\Shell->runCommand(Array, false, Array)
+#8 /var/www/html/cakePHP/vendor/cakephp/cakephp/src/Console/CommandRunner.php(141): Cake\Console\Shell->runCommand(Array, true)
+#9 /var/www/html/cakePHP/bin/cake.php(12): Cake\Console\CommandRunner->run(Array)
+#10 {main}
+
+
